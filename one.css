@@ -1,0 +1,50 @@
+* {
+  text-shadow: -1em 1em 1em peachpuff;
+}
+
+::selection {
+  background: #fdfd00;
+  color: #415;
+}
+
+:root {
+  background-color: #bae4ea;
+  background-image: linear-gradient(.333turn, #bae, #bae4ea, mistyrose, peachpuff);
+  color: #415;
+}
+
+mark {
+  background-color: #bae;
+  color: #415;
+}
+
+:any-link {
+  color: #fdfd00;
+  text-decoration-color: #415;
+  text-decoration-style: wavy;
+}
+
+:focus {
+  outline-color: indigo;
+  outline-width: thick;
+}
+
+:any-link {
+  text-shadow: -.111ex .111ex 0 #415;
+}
+
+strong :any-link {
+  text-decoration-color: #bae;
+  text-decoration-style: dotted;
+  text-shadow: .111ex 0 .111ex orange;
+}
+
+[href*=spotify] {
+  color: springgreen;
+}
+
+@media (prefers-contrast: more) {
+  :any-link {
+    color: #111;
+  }
+}
